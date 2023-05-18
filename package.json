@@ -1,0 +1,26 @@
+{
+  "name": "arduino-bt",
+  "version": "1.0",
+  "description": "Automatiza uma tecla ou click do mouse quando o arduino envia um sinal via PORTA SERIAL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pkg": "pkg index.js -t win32 -o ./release/index.exe & npx pkg-edit build & cp ./config.json ./release/ & del release\\index.exe"
+  },
+  "author": "Nato Pedroso",
+  "license": "",
+  "dependencies": {
+    "image-to-base64": "^2.2.0",
+    "node-gyp": "^9.3.1",
+    "node-hide-console-window": "^2.1.1",
+    "node-resourcehacker": "^1.2.1",
+    "rcedit": "^3.0.1",
+    "robotjs": "^0.6.0",
+    "sendkeys": "^1.1.1",
+    "serialport": "^9.0.2",
+    "systray": "^1.0.5"
+  },
+  "devDependencies": {
+    "pkg-edit": "^1.1.3"
+  }
+}
