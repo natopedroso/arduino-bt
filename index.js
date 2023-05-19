@@ -90,7 +90,7 @@ function tryOpen() {
 
   port.on("open", () => {
     console.log("Port open");
-    hideConsole();
+    // hideConsole();
     show = false;
   });
 
